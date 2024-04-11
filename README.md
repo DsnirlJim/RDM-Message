@@ -1,1 +1,1 @@
-Random Joke generator
+Random Haiku generator
