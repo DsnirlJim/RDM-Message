@@ -1,6 +1,7 @@
 let idx = 0;
 let idc = 0;
 let idk = 0;
+let idq = 0;
 const poem = [
   "You’re so cute, but why,",
   "In the morning light,",
@@ -43,7 +44,14 @@ const poem3 = [
   "But slowly, slowly!",
   "Softly, please.",
 ];
-
+const jud = [
+  "Had better Haikus and had worse",
+  "That is an amazing Haiku",
+  "That was bad",
+  "Im gonna call the cops, so bad was it",
+  "I think i never heared something more true then this",
+  "*sniff* Perfection",
+];
 document.querySelector("button").addEventListener("click", () => {
   document.querySelector("#p1").innerHTML = poem[idx];
   idx = Math.floor(Math.random() * 15) % poem.length;
@@ -54,4 +62,7 @@ document.querySelector("button").addEventListener("click", () => {
   document.querySelector("#p3").innerHTML = poem3[idc];
   idc = Math.floor(Math.random() * 15) % poem3.length;
   console.log(idc);
+  document.querySelector("#judge").innerHTML = jud[idq];
+  idq = Math.floor(Math.random() * 15) % jud.length;
+  console.log(idq);
 });
